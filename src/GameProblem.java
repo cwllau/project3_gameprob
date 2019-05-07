@@ -18,28 +18,35 @@ public class GameProblem
         try
         {
             file = new Scanner(f);
-            int ACol = file.nextInt();
-            int ARow = file.nextInt();
 
-            int [][] A = new int[ACol][ARow];
+            //scanning for n and m
+            int n = file.nextInt();
+            int m = file.nextInt();
 
-            for (int i = 0;  i < A.length; i++)
-            {
-                for (int j = 0; j < A[0].length; j++)
-                {
-                    A[i][j] = file.nextInt();
-                }
-            }
-            file.close();
-            System.out.println("A");
-            for (int i = 0; i < A.length; i++)
-            {
-                for (int j = 0; j< A[0].length; j++)
-                {
-                    System.out.println(A[i][j] + " ");
-                }
-                System.out.println();
-            }
+            System.out.println("n: " + n + " m: " + m);
+
+//            int ACol = file.nextInt();
+//            int ARow = file.nextInt();
+//
+//            int [][] A = new int[ACol][ARow];
+//
+//            for (int i = 0;  i < A.length; i++)
+//            {
+//                for (int j = 0; j < A[0].length; j++)
+//                {
+//                    A[i][j] = file.nextInt();
+//                }
+//            }
+//            file.close();
+//            System.out.println("Matrix is : \n");
+//            for (int i = 0; i < A.length; i++)
+//            {
+//                for (int j = 0; j< A[0].length; j++)
+//                {
+//                    System.out.println(A[i][j] + " ");
+//                }
+//                System.out.println();
+//            }
         }
         catch (FileNotFoundException e)
         {
